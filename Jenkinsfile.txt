@@ -1,7 +1,7 @@
 
 stage 'build' 
 node {
-git 'https://github.com/manmadhg/mavenRepo.git' withEnv(["PATH+MAVEN=${tool 'm3'}/bin"]) {
+git 'https://github.com/manmadhg/mavenRepo.git' withEnv(["PATH+MAVEN=${tool 'm2'}/bin"]) {
 sh "mvn -B –Dmaven.test.failure.ignore=true clean package"
 }
 }
