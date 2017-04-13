@@ -1,5 +1,6 @@
 node{
 
 echo "Hai this is manmadh.."
+bat "mvn package"
 
 }
